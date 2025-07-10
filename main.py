@@ -1,3 +1,4 @@
+import os
 import asyncio
 import logging
 import json
@@ -7,7 +8,7 @@ from aiogram.filters import CommandStart, CommandObject
 
 # --- Конфигурация ---
 # Ваш токен от @BotFather
-API_TOKEN = "7977339121:AAEybX7kfWMzQXMnsZhjLUunsyMra1vsly8" 
+API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") 
 
 # ✅ ВАША НАСТОЯЩАЯ ССЫЛКА НА MINI APP
 MINIAPP_URL = "https://bot-eta-two-19.vercel.app"
